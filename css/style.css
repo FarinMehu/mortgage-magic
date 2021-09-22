@@ -10,9 +10,13 @@
 *{
     box-sizing: border-box;
 }
-body{
-    padding: 0;
+html, 
+body {
+    width: 100%;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
 header{
     font-family: var(--header-font);
@@ -28,6 +32,11 @@ header{
 /* nav tag style  */
 header .navbar{
     padding: 20px 0;
+    
+}
+.navbar{
+    position: fixed;
+    top: 0;
 }
 .tags ul li a{
     font-weight: var(--font-weight);
@@ -186,7 +195,7 @@ header .navbar{
 }
 
 .img_div {
-    width: 250px;
+    /* width: 250px; */
     height: 4rem;
     border: 1px solid #cad7dc;
     border-radius: 5px;
@@ -281,6 +290,10 @@ img {
 .dashboard_style{
     padding: 80px 0;
 }
+.dashboard_style .dashboard_header{
+    width: 80%;
+    margin: auto;
+}
 .dashboard_style .dashboard_header h2{
     font-size: 50px;
     font-weight: 600;
@@ -325,7 +338,7 @@ img {
 .linechart_li_active a{
     /* height: 100%; */
     padding: 13px 30px;
-    margin: 10px;
+    margin: 5px 15px 15px 15px;
     /* margin-right: 22px; */
     font-size: 20px;
     font-family: var(--header-font);
@@ -339,8 +352,8 @@ img {
 }
 .linechart_li{
     width: 400px;
-    height: 40px;
-    margin-top: 15px;
+    height: 30px;
+    margin-top: 5px;
     list-style: none;
 }
 .linechart_li a{
@@ -355,7 +368,7 @@ img {
     border: none;
     border-radius: 4px;
     color: #90a0ab;
-    background-color: #dddddd;
+    background-color: #fff;
 }
 .linechart_li a:hover{
     background: linear-gradient(
@@ -371,7 +384,7 @@ img {
 /* Part - 4 Existing Mortgage CRM software style start  */
 .part_4{
     background-color: #f2f5f6;
-    height: 900px;
+    height: 800px;
 }
 .part_4_container{
     padding-top: 45px;
@@ -417,6 +430,13 @@ img {
 /* Part - 4 Existing Mortgage CRM software style end  */
 
 /* Part-5 Back office system start  */
+.part_5_header_container h1 span{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--header-font);
+    line-height: 75px;
+    /* text-align: center; */
+}
 .part_5_horizontal_line {
     display: block;
     margin: auto;
@@ -464,8 +484,8 @@ img {
     color: var(--white-text-hover);
 }
 .part_6_card{
-    width: 30%;
-    height: 300px;
+    /* width: 30%; */
+    height: 315px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 10px 36px rgb(0 0 0 / 10%);
@@ -497,7 +517,9 @@ img {
     letter-spacing: 0.04rem;
     color: #545454;
     margin-top: 8px;
+    height: 100px;
 }
+
 /* Part - 6 solution style end  */
 
 /* Part - 7 CRM of choice style start  */
@@ -508,10 +530,12 @@ img {
     margin-top: 5.5rem;
     margin-bottom: 4rem;
 }
-.p7_container h2 span{
+.p7_container .p7_head h2{
     font-size: 50px;
     font-weight: 600;
-
+    font-family: var(--header-font);
+    text-align: center;
+    line-height: 1.1;
 }
 .p7_container .left_side{
     margin-top: 5rem;
@@ -532,7 +556,7 @@ img {
     font-size: 38px;
     font-weight: 600;
     font-family: var(--header-font);
-    line-height: 20px;
+    /* line-height: 20px; */
     color: #2d2d2d;
     margin-bottom: 3rem;
 }
@@ -543,6 +567,13 @@ img {
     color: #2d2d2d;
     letter-spacing: 0.02em;
     line-height: 160%;
+}
+.p7_container .row .right_side .buttons{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    display: inline-block;
 }
 .p7_container .row .right_side .p7_signUp_style{
     box-sizing: border-box;
@@ -615,6 +646,13 @@ img {
 .p8_container .right_side img{
     margin-top: 5rem;
 }
+.p8_container .row .left_side .buttons{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    display: inline-block;
+}
 .p8_container .row .left_side .p8_signUp_style{
     box-sizing: border-box;
     padding: 17px 42px;
@@ -682,6 +720,13 @@ img {
     letter-spacing: 0.02em;
     color: #2d2d2d;
 }
+.p9_container .row .right_side .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
 .p9_last{
     height: 200px;
     background-color: #eeeeee;
@@ -693,6 +738,11 @@ img {
     font-family: var(--header-font);
     line-height: 57px;
     color: #2d2d2d;
+}
+.p9_last .p9_last_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .p9_container .row .right_side .p9_info_btn{
     box-sizing: border-box;
@@ -771,6 +821,9 @@ footer{
 .up_footer .right_side .item ul li a{
     text-decoration: none;
 }
+/* .up_footer .right_side .item{
+    padding-left: 2rem;
+} */
 .up_footer .right_side .item ul{
     padding-left: 0;
 } 
@@ -791,21 +844,135 @@ footer{
 
 /* footer style end  */
 
+@media  screen and (max-width: 688px) {
+    /* body{
+        font-size: 25px;
+        font-weight: 300;
+    } */
+    .header_section .section_row{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .header_section .section_row h1{
+        font-size: 30px;
+        line-height: 40px;
+        display: inline-block;
+    }
+    .header_section .section_row .how_it_works_btn{
+        font-size: 14px;
+        padding: 10px 25px;
+        width: 10rem;
+        display: inline-block;
+    }
+    .header_section .section_row .sign_up_btn{
+        font-size: 14px;
+        padding: 7px 36px;
+        display: inline-block;
+    }
+    .header_section .section_row .under_link{
+        display: none;
+    }
+    .p3_container .iso_style{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .dashboard_list{
+        width: 350px;
+        height: 450px;
+        margin: 0;
+        padding: 0;
+    }
+    .linechart_container{
+        height: 100%;
+        width: 100%;
+        
 
-/* keyframes  */
-/* part - 4 keyframe  */
-.my_move{
-    position: relative;
-    animation-name: mymove;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-@keyframes mymove{
-    from{
-        left: 0%;
     }
-    to{
-        left: 30px;
+    .linechart_container ul{
+        padding: 0;
+        height: 168px;
     }
-}
-/* part - 5 keyframes  */
+    .linechart_ul{
+        display: block;
+    }
+    .linechart_img{
+        height: 151px;
+        margin-left: 0;
+    }
+    .linechart_img img{
+        padding: 1rem 1.4rem;
+    }
+    .linechart_li a:hover{
+        background: linear-gradient(
+            127.35deg, #4285F4 0%, #00A1F1 100%);
+        color: #fff;
+    }
+    .part_4{
+        height: auto;
+    }
+    .part_4_title{
+        width: 90%;
+    }
+    .part_4_container img{
+        margin-top: 0;
+    }
+    .part_5_header_container h1 span{
+        text-align: center;
+        display: block;
+        left: 0;
+    }
+    .p6_section{
+        height: 1200px;
+    }
+    .p7_section{
+        height: 1400px;
+    }
+    .p7_container .right_side{
+        margin-top: 8rem;
+    }
+    .p7_container .right_side h3{
+        /* margin-top: 5rem; */
+        /* line-height: 0; */
+    }
+    .p8_section{
+        height: 1100px;
+        margin-bottom: 1rem;
+    }
+    .p8_container .right_side .row .buttons{
+        display: block;
+    }
+    .p9_section{
+        height: 1530px;
+        margin-top: 3rem;
+    }
+    .p9_container .row .right_side {
+        margin-top: 3rem;
+    }
+    .p9_container .right_side h2{
+        line-height: 40px;
+    }
+    .p9_container .row .right_side .buttons{
+        display: block;
+    }
+    .p9_last{
+        height: 350px;
+    }
+    .p9_last .p9_last_container h3{
+        font-size: 30px;
+    }
+    .p9_last .p9_last_container{
+        display: block;
+    }
+    .p9_last .p9_last_container span h3{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    footer{
+        height: 1400px;
+        margin-top: 0;
+    }
+  }
