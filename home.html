@@ -40,8 +40,8 @@
                 <div class="collapse navbar-collapse ms-5 tags" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a style="color: #2d2d2d;" class="nav-link active items" aria-current="page"
-                                href="#">Home</a>
+                            <a style="color: #2d2d2d; background-color: #fff;" class="nav-link active items"
+                                aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a style="color: #2d2d2d;" class="nav-link dropdown-toggle items todo" href="#"
@@ -121,13 +121,92 @@
     <!-- header end -->
 
     <!-- Featured In section start  -->
-
+    <section class="featured_section">
+        <h1 class="text-center mt-5 mb-3">Featured in</h1>
+        <hr class="hr_style mt-3 mb-3">
+        <div class="slideshow-container mt-5">
+            <div class="mySlides">
+                <div class="d-flex justify-content-around align-items-center ">
+                    <div class="img_div">
+                        <img src="/images/financial-reporter.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/best-advice.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/mortgage-introducer.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/talk-cmo.png">
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="img_div">
+                        <img src="/images/cherry.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/mortgage-strategy.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/bridging-commercial.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/twenty7tech.png">
+                    </div>
+                </div>
+                <!-- <img src="/images/cherry.png" style="width:100%"> -->
+            </div>
+            <div class="mySlides">
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="img_div">
+                        <img src="/images/mortgage-finance-gazette.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/money-age.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/introducer-today.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/getting-money-wise.png">
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="img_div">
+                        <img src="/images/money-age.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/introducer-today.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/getting-money-wise.png">
+                    </div>
+                    <div class="img_div">
+                        <img src="/images/ft-adviser.png">
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
     <!-- Featured In section end  -->
     <!-- Iso section start -->
     <section class="p3_container">
         <section class="container iso_style">
             <h1>We are ISO Certified</h1>
-            <hr style="height:5px;" class="horizontal_style">
+            <hr style="height:5px;" class="hr_style">
             <img class="img-fluid mb-5" src="images/iso-iertificate.png" alt="">
         </section>
         <hr>
@@ -164,35 +243,43 @@
     <!-- Iso section end -->
     <!-- Part - 4 Existing Mortgage CRM software start -->
     <section class="part_4">
-        <div class="container part_4_container">
-            <div class="row gx-5">
-                <div class="col-lg-8 col-12 part_4_article">
-                    <h1 class="part_4_title">Existing Mortgage CRM software can be out of date, clunky, frustrating and
-                        error prone</h1>
-                    <article class="part_4_subtitle">
-                        Many present day mortgage software and CRM providers require you to take multiple day long
-                        training sessions just to be able to operate the software properly, wasting important business
-                        time. Also many advisers and administration staff struggle with software that they perceive as
-                        too complicated, while other providers require you to spend thousands of pounds to customise
-                        their software to your business.
-                    </article>
+        <div class="my_move">
+            <div class="container part_4_container">
+                <div class="row gx-5">
+                    <div class="col-lg-8 col-12 part_4_article">
+                        <h1 class="part_4_title">Existing Mortgage CRM software can be out of date, clunky, frustrating
+                            and
+                            error prone</h1>
+                        <article class="part_4_subtitle">
+                            Many present day mortgage software and CRM providers require you to take multiple day long
+                            training sessions just to be able to operate the software properly, wasting important
+                            business
+                            time. Also many advisers and administration staff struggle with software that they perceive
+                            as
+                            too complicated, while other providers require you to spend thousands of pounds to customise
+                            their software to your business.
+                        </article>
 
-                    <article class="part_4_subtitle">A mortgage management and CRM system should be simple to learn,
-                        offer good value for money
-                        and be working from the moment you switch it on.</article>
-                    <article class="part_4_subtitle">Unfortunately, that is rarely the case.</article>
-                    <article class="part_4_subtitle">Too many systems still on offer are based on yesterday’s technology
-                        while being passed off
-                        as up to date. Many have been poorly adapted from other business sectors and are not designed
-                        for the mortgage market, which is why they are unable to provide intermediaries like you with
-                        the best tools to manage your business.</article>
-                    <div class="signup_btn">
-                        <a class="signUp_style" href="">Sign Up Now</a>
+                        <article class="part_4_subtitle">A mortgage management and CRM system should be simple to learn,
+                            offer good value for money
+                            and be working from the moment you switch it on.</article>
+                        <article class="part_4_subtitle">Unfortunately, that is rarely the case.</article>
+                        <article class="part_4_subtitle">Too many systems still on offer are based on yesterday’s
+                            technology
+                            while being passed off
+                            as up to date. Many have been poorly adapted from other business sectors and are not
+                            designed
+                            for the mortgage market, which is why they are unable to provide intermediaries like you
+                            with
+                            the best tools to manage your business.</article>
+                        <div class="signup_btn">
+                            <a class="signUp_style" href="">Sign Up Now</a>
+                        </div>
+
                     </div>
-
-                </div>
-                <div class="col-lg-4 col-12">
-                    <img src="images/Old Computer-01 1.png" alt="">
+                    <div class="col-lg-4 col-12">
+                        <img src="images/Old Computer-01 1.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,7 +292,7 @@
                 <span style="margin-left: 30%;">Back office system of choice for</span>
                 <span style="margin-left: 25%;">Mortgage Brokers and Financial Advisers</span>
             </h1>
-            <hr style="height:5px;" class="part_5_horizontal_line my-4">
+            <hr style="height:5px;" class="hr_style my-4">
         </div>
         <div class="container">
             <div class="row">
@@ -335,8 +422,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title p6_card_head">Automated Lead Management</h5>
                                         <p class="card-text p6_card_para">Intuitive lead management system connected to
-                                            your website. Integrated with VOIP phone calls automated email sequencing,
-                                            text messaging and more
+                                            your website. Integrated with VOIP phone calls automated email sequencing.
                                         </p>
                                     </div>
                                 </div>
@@ -350,7 +436,7 @@
     <!-- Part - 6 Solutions end -->
 
     <!-- Part - 7 CRM of choice start  -->
-    <section class="p7_section">
+    <section class="p7_section mb-5">
         <div class="container p7_container">
             <h2>
                 <span style="margin-left: 15%;">CRM of choice for forward thinking</span> <br>
@@ -358,7 +444,10 @@
             </h2>
             <div class="row">
                 <div class="col-lg-6 col-12 left_side">
-                    <img src="images/Unified Platform.png" alt="">
+                    <div class="p7_img">
+                        <img src="images/Unified Platform.png" alt="">
+                    </div>
+
                 </div>
                 <div class="col-lg-6 col-12 right_side">
                     <h3>The Unified Platform</h3>

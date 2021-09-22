@@ -7,10 +7,24 @@
     --red-hover: #c1272d;
     --white-text-hover: #fff;
 }
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
 header{
     font-family: var(--header-font);
 }
-
+.hr_style{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 8%;
+    height: 5px !important;
+    color: var(--clr-text) !important;
+}
 /* nav tag style  */
 header .navbar{
     padding: 20px 0;
@@ -154,6 +168,85 @@ header .navbar{
     font-family: var(--header-font);
     color: var(--white-text-hover);
 }
+/* Header style end  */
+/* Featured in start  */
+.featured_section{
+    padding-top: 30px;
+}
+.featured_section h1{
+    font-family: var(--header-font);
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+.mySlides {
+    display: none;
+    padding: 2rem;
+    padding-top: 3.5rem;
+}
+
+.img_div {
+    width: 250px;
+    height: 4rem;
+    border: 1px solid #cad7dc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+img {
+    width: 100%;
+    /* padding-left: 7px; */
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 2px;
+    text-decoration: none;
+    /* margin-top: -22px; */
+    background-color: #cad7dc;
+    color: #fff;
+    transition: 0.6s ease;
+    border-radius: 20px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #111111;
+}
+
+/* Featured in end  */
 /* ISO style start  */
 .p3_container{
     background-color: #fff;
@@ -360,7 +453,7 @@ header .navbar{
     margin: 35px 0;
     margin-right: 30px;
     padding: 17px 42px;
-    width: 15rem;
+    width: 248px;
     border-radius: 30px;
     font-weight: normal;
     font-size: 20px;
@@ -409,7 +502,7 @@ header .navbar{
 
 /* Part - 7 CRM of choice style start  */
 .p7_section{
-    height: 700px;
+    height: 500px;
 }
 .p7_container{
     margin-top: 5.5rem;
@@ -422,7 +515,15 @@ header .navbar{
 }
 .p7_container .left_side{
     margin-top: 5rem;
+    
     /* margin-left: 8rem; */
+}
+.p7_container .left_side .p7_img{
+    width: 400px;
+}
+.p7_container .left_side .p7_img img{
+    width: 100%;
+    /* padding-left: 5rem; */
 }
 .p7_container .right_side{
     margin-top: 8rem;
@@ -491,6 +592,7 @@ header .navbar{
 .p8_section{
     height: 600px;
     background-color: #f6f8fd;
+    margin-top: 10rem;
 }
 .p8_container{
     padding-top: 3rem;
@@ -688,3 +790,22 @@ footer{
 
 
 /* footer style end  */
+
+
+/* keyframes  */
+/* part - 4 keyframe  */
+.my_move{
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes mymove{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 30px;
+    }
+}
+/* part - 5 keyframes  */
