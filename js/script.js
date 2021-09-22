@@ -1,3 +1,24 @@
+// animtaed image slider 
+const imgArray = [
+    'images/factfind.png',
+    'images/Leads.png',
+    'images/Manage Cases.png',
+    'images/01 1.png',
+]
+
+let imgIndex = 0;
+const imgSlider = document.getElementById('slider-img');
+setInterval(() => {
+    // console.log(imgIndex);
+    if (imgIndex >= imgArray.length) {
+        imgIndex = 0;
+    }
+    const imgUrl = imgArray[imgIndex];
+    // console.log(imgUrl);
+    imgSlider.setAttribute('src', imgUrl);
+    imgIndex++;
+}, 1000);
+
 // featured in js start 
 var slideIndex = 1;
 showSlides(slideIndex);

@@ -22,6 +22,129 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+
+    <!-- Animations  -->
+    <style>
+        .slide_in {
+            animation-duration: 1.5s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+
+        .slide_in_p4 {
+            animation-duration: 2.5s;
+            animation-name: slideinP4;
+        }
+
+        @keyframes slideinP4 {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+
+        .slide_in_p5 {
+            animation-duration: 7s;
+            animation-name: slideinP5;
+        }
+
+        @keyframes slideinP5 {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+
+        .slide_in_p6 {
+            animation-duration: 8s;
+            animation-name: slideinP6;
+        }
+
+        @keyframes slideinP6 {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+
+        .slide_in_p7 {
+            animation-duration: 10s;
+            animation-name: slideinP7;
+        }
+
+        @keyframes slideinP7 {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+
+        .slide_in_p8 {
+            animation-duration: 12s;
+            animation-name: slideinP8;
+        }
+
+        @keyframes slideinP8 {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+
+        .slide_in_p9 {
+            animation-duration: 13s;
+            animation-name: slideinP9;
+        }
+
+        @keyframes slideinP9 {
+            from {
+                transform: translateX(-100%);
+                left: 0%;
+            }
+
+            to {
+                transform: translateX(0%);
+                left: 100%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -93,25 +216,29 @@
         <section class="header_section">
             <div class="container">
                 <div class="row d-flex align-items-center section_row">
-                    <div class="header_text_container col-md-8 col-sm-12">
+                    <div class="header_text_container col-lg-6 col-12">
                         <!-- 1st -->
                         <h4>#1 CRM for Mortgage Brokers</h4>
                         <h1 class="pt-3">
                             A revolutionary <br> platform for the <br> UK Mortgage industry
                         </h1>
                         <div class="mt-2">
-                            <button class="btn h-25 how_it_works_btn" type="button">
+                            <button class="btn h-25 how_it_works_btn slide_in" type="button">
                                 <span><i class="fas fa-play-circle"></i></span>
                                 How It Works</button>
                             <button class="btn h-25 sign_up_btn" type="submit">Sign Up</button>
                         </div>
-                        <div class="under_link">
+                        <div class="under_link slide_in">
                             <a href="#" target="_blank">Compliance Package >></a>
                             <a style="margin-left: 26px;" href="#" target="_blank">Digital Package
                                 >></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12"></div>
+                    <div class="col-lg-6 col-12 animated_img_slider">
+
+                        <img class="img-slider mt-5" id="slider-img" src="images/01 1.png" alt="">
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -243,7 +370,7 @@
     <!-- Part - 4 Existing Mortgage CRM software start -->
     <section class="part_4">
         <div class="my_move">
-            <div class="container part_4_container">
+            <div class="container part_4_container slide_in_p4">
                 <div class="row gx-5">
                     <div class="col-lg-8 col-12 part_4_article">
                         <h1 class="part_4_title">Existing Mortgage CRM software can be out of date, clunky, frustrating
@@ -296,7 +423,7 @@
         <div class="container">
             <div class="row">
                 <div class="my-4 col-lg-8 col-12 part_5_container">
-                    <div class="d-flex  align-items-center">
+                    <div class="d-flex  align-items-center  slide_in_p5">
                         <div class="part_5_img me-3">
                             <img src="images/Group 8.png" alt="">
                         </div>
@@ -307,7 +434,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center slide_in_p5">
                         <div class="part_5_img me-3">
                             <img src="images/technology.png" alt="">
                         </div>
@@ -319,7 +446,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center  slide_in_p5">
                         <div class="part_5_img me-3">
                             <img src="images/analytics.png" alt="">
                         </div>
@@ -330,7 +457,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center  slide_in_p5">
                         <div class="part_5_img me-3">
                             <img src="images/easy-use.png" alt="">
                         </div>
@@ -341,7 +468,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="signup_btn">
+                    <div class="signup_btn  slide_in_p5">
                         <a class="signUp_style" href="">Sign Up Now</a>
                     </div>
                 </div>
@@ -435,7 +562,7 @@
 
     <!-- Part - 7 CRM of choice start  -->
     <section class="p7_section mb-5">
-        <div class="container p7_container">
+        <div class="container p7_container slide_in_p7">
             <!-- <h2>
                 <span style="margin-left: 15%;">CRM of choice for forward thinking</span> <br>
                 <span style="margin-left: 24%;">Mortgage Intermediaries</span>
@@ -477,7 +604,7 @@
 
     <!-- Part - 8 Fully Compliant start  -->
     <section class="p8_section">
-        <div class="container p8_container">
+        <div class="container p8_container slide_in_p8">
             <div class="row">
                 <div class="col-lg-6 col-12 left_side">
                     <h3>Fully Compliant</h3>
@@ -512,7 +639,7 @@
 
     <!-- Part - 9 Client satisfaction start  -->
     <section class="p9_section">
-        <div class="container p9_container">
+        <div class="container p9_container slide_in_p9">
             <div class="row">
                 <div class="col-lg-6 col-12 left_side">
                     <img src="images/Happy Client.png" alt="">
