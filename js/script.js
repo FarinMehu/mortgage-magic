@@ -1,8 +1,24 @@
+//sticky navbar
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+            document.getElementById('navbar_top').classList.remove('fixed-top');
+            // remove padding top from body
+            document.body.style.paddingTop = '0';
+        }
+    });
+});
+
 // animtaed image slider 
 const imgArray = [
     'images/factfind.png',
-    'images/Leads.png',
     'images/Manage Cases.png',
+    'images/Leads.png',
     'images/01 1.png',
 ]
 
@@ -17,7 +33,7 @@ setInterval(() => {
     // console.log(imgUrl);
     imgSlider.setAttribute('src', imgUrl);
     imgIndex++;
-}, 1000);
+}, 2000);
 
 // featured in js start 
 var slideIndex = 1;

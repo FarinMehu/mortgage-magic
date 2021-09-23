@@ -32,12 +32,14 @@ header{
 /* nav tag style  */
 header .navbar{
     padding: 20px 0;
-    
 }
-.navbar .container .navbar-collapse ul{
+/* header nav{
+    position: fixed;
+}
+nav .navbar .container .tags ul{
     position: sticky;
     top: 0;
-}
+} */
 .tags ul li a{
     font-weight: var(--font-weight);
 }
@@ -206,10 +208,10 @@ header .navbar{
 }
 
 .img_div {
-    /* width: 250px; */
+    width: 250px !important;
     height: 4rem;
     border: 1px solid #cad7dc;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-right: 5px;
 }
 
@@ -415,7 +417,7 @@ img {
     line-height: 160%;
     margin: 35px 0;
 }
-.signUp_style{
+.part_4 .part_4_container .row .part_4_article .signup_btn .signUp_style{
     box-sizing: border-box;
     padding: 17px 42px;
     margin: 35px 0;
@@ -431,10 +433,10 @@ img {
     border-radius: 8px;
     box-shadow: 0px 12px 20px 4px rgb(193 39 45 / 20%);
 }
-.signup_btn{
+.part_4 .part_4_container .row .part_4_article .signup_btn{
     margin: 6rem 0 12rem;
 }
-.signup_btn a:hover{
+.part_4 .part_4_container .row .part_4_article .signup_btn a:hover{
     background-color: #2d2d2d;
     color: #fff;
 }
@@ -455,6 +457,37 @@ img {
     width: 10%;
     /* color: #2d2d2d; */
     background-color: currentColor;
+}
+.part_5 .part_5_container .signup_btn .signUp_style{
+    box-sizing: border-box;
+    padding: 17px 42px;
+    margin: 35px 0;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--header-font);
+    line-height: 30px;
+    text-decoration: none;
+    background: linear-gradient(
+        94.79deg, #C1272D 2.91%, #A01E23 101.47%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 12px 20px 4px rgb(193 39 45 / 20%);
+}
+.part_5 .part_5_container .signup_btn{
+    margin: 6rem 0 12rem;
+}
+/* .part_4 .part_4_container .row .part_4_article .signup_btn a:hover{
+    background-color: #2d2d2d;
+    color: #fff;
+} */
+.part_5 .part_5_container .signup_btn a{
+    background-color: var(--red-hover);
+    color: var(--white-text-hover);
+}
+.part_5 .part_5_container .signup_btn a:hover{
+    background-color: var(--clr-text);
+    color: var(--white-text-hover);
 }
 /* Part-5 Back office system end */
 
@@ -492,6 +525,10 @@ img {
     border: 1px solid var(--red-hover);
     border-radius: 8px;
     background-color: var(--red-hover);
+    color: var(--white-text-hover);
+}
+.part_6_container .row .p6_left_side button:hover{
+    background-color: var(--clr-text);
     color: var(--white-text-hover);
 }
 .part_6_card{
@@ -860,12 +897,12 @@ footer{
         font-size: 25px;
         font-weight: 300;
     } */
-    @media (max-height: 2000px) {
+    /* @media (max-height: 2000px) {
         .navbar .container .navbar-collapse ul {
           position: sticky;
           top: 0;
         }
-      }
+      } */
     .header_section .section_row{
         position: relative;
         min-height: 1px;
